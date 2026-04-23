@@ -30,22 +30,19 @@ docker volume ls
 ### Evidências
 
 Arquivo `docker-compose.yml` no VS Code:
-<!-- PRINT: docker compose no vscode -->
+<img width="1920" height="1026" alt="docker compose" src="https://github.com/user-attachments/assets/5799a047-fe92-4ff2-80c0-4d879517f040" />
 
 Build e inicialização (`docker compose up -d`):
-<!-- PRINT: docker compose up -->
+<img width="1920" height="1030" alt="docker compose up" src="https://github.com/user-attachments/assets/5e4278c8-3f0d-410f-9c33-a90425fe0b51" />
 
 Containers em execução (`docker compose ps`):
-<!-- PRINT: docker compose ps -->
+<img width="1920" height="1030" alt="docker compose ps" src="https://github.com/user-attachments/assets/14878ad8-7ac2-4c66-92b5-b15707f76aed" />
 
 Aplicação funcionando no navegador:
-<!-- PRINT: localhost -->
+<img width="1913" height="990" alt="localhost" src="https://github.com/user-attachments/assets/9cb961e1-1392-438b-9e5b-a1ea5e5032a7" />
 
 Network criada (`docker network ls`):
-<!-- PRINT: docker network ls -->
-
-Volume criado (`docker volume ls`):
-<!-- PRINT: docker volume ls -->
+<img width="1920" height="1028" alt="docker netowrk e volume" src="https://github.com/user-attachments/assets/988d7c40-4511-4fa1-8197-687cad640510" />
 
 ---
 
@@ -98,14 +95,9 @@ docker compose up -d
 
 ### Evidências
 
-Dockerfile no VS Code:
-<!-- PRINT: docker compose no vscode (o mesmo print serve aqui) -->
-
-Build da imagem (`docker build`):
-<!-- PRINT: não temos esse, pode pular ou refazer com: docker build -t lamataa/cp2-app:1.0.0 . -->
-
 Push para o Docker Hub (`docker push`):
-<!-- PRINT: docker login e push -->
+<img width="1920" height="1028" alt="login e push" src="https://github.com/user-attachments/assets/461fb271-a9c9-45a2-b4ac-7f2df3b3684d" />
+
 
 Imagem publicada no Docker Hub:
-<!-- PRINT: repositorio do docker -->
+<img width="1916" height="988" alt="hub" src="https://github.com/user-attachments/assets/facdd6d2-14e5-4e94-90f7-b8998bfb24c1" />
