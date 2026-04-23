@@ -1,0 +1,39 @@
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+
+services:
+  web:
+    build: .
+    container_name: cp2_web
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+    depends_on:
+      - redis
+    restart: unless-stopped
+    stop_grace_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 256M
+
+  redis:
+    image: redis:7-alpine
+    container_name: cp2_redis
+    networks:
+      - app-network
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    stop_grace_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 128M
